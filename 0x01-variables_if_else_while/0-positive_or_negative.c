@@ -6,7 +6,7 @@
  * main - Entry point
  * Description - Generates a random number and determines if it's positive,
  *              zero, or negative.
- * Return : 0 (Sucess)
+ * Return : Always 0 successful execution
  */
 int main(void)
 {
