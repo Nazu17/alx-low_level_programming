@@ -1,11 +1,10 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
  * main - Entry point
- * Description - Generates a random number and determines if it's positive,
- *              zero, or negative.
+ * Description - Print whether the number stored is positive or negative
  * Return : Always 0 successful execution
  */
 int main(void)
