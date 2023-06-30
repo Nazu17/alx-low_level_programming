@@ -19,18 +19,17 @@ char *cap_string(char *s)
 		{
 			s[0] = s[0] - 32;
 		}
-if (s[string_count] == ' ' || s[string_count] == '\t' || s[string_count] == '\n'
-|| s[string_count] == ',' || s[string_count] == ';' || s[string_count] == '.'
-|| s[string_count] == '.' || s[string_count] == '!' || s[string_count] == '?'
-|| s[string_count] == '"' || s[string_count] == '(' || s[string_count] == ')'
-|| s[string_count] == '(' || s[string_count] == ')')
+	if (s[0] == ' ' || s[0] == '\t' || s[0] == '\n'
+		|| s[0] == ',' || s[0] == ';' || s[0] == '.'
+		|| s[0] == '.' || s[0] == '!' || s[0] == '?'
+		|| s[0] == '"' || s[0] == '(' || s[0] == ')'
+		|| s[0] == '(' || s[0] == ')')
+	{
+		if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
 		{
-			if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
-			{
-				s[string_count + 1] = s[string_count + 1] - 32;
-			}
+			s[string_count + 1] = s[string_count + 1] - 32;
 		}
-		string_count++;
 	}
-	return (s);
+		string_count++;
+		return (s);
 }
